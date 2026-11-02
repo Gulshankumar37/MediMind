@@ -31,10 +31,13 @@ import authRoutes from './routes/authRoutes.js';
 import reportRoutes from './routes/reportRoutes.js';
 
 const app = express();
-
+app.set("trust proxy",1);
 // CORS configuration
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: [
+        "http://localhost:5173",
+        "https://medimind-rho.vercel.app"
+    ],
     credentials: true
 }));
 
