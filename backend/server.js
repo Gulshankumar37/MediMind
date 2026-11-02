@@ -36,7 +36,8 @@ app.set("trust proxy",1);
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://medimind-rho.vercel.app"
+        //"https://medimind-rho.vercel.app"
+        "https://medimind-mg8o.vercel.app"
     ],
     credentials: true
 }));
