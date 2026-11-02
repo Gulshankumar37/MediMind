@@ -12,6 +12,10 @@ build/
 
 # Uploads
 uploads/
+node_modules/
+.env
+.env.*
+!.env.example
 
 # Logs
 *.log
